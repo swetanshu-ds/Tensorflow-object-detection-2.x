@@ -30,3 +30,5 @@ protoc object_detection/protos/*.proto --python_out=.
 18. in the base url = change the current url 'http://download.tensorflow.org/models/object_detection/' 
 19. to 'http://download.tensorflow.org/models/object_detection/tf2/20200711/'
 20. And  now run it again
+21 . Now go to the Detection and replace the model_name from -> 'ssd_mobilenet_v1_coco_2017_11_17' to -> 'efficientdet_d1_coco17_tpu-32'
+22. Now run the Detection
