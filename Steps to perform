@@ -1,0 +1,24 @@
+1. Go to - https://github.com/tensorflow/models
+2. Then go to models -> research  -> object detection -> colab tutorials 
+3. Inside colab tutorials - click on  object_detection_tutorial.ipynb and open in colab
+4. Now connect and mount google drive 
+5. Now run till 
+%%bash
+cd models/research/
+protoc object_detection/protos/*.proto --python_out=.
+7.  After running this cell stop ,you will see inside models research object detection protos there are new files created with extension .py
+8. Inside models ->research -> object detection -> packages -> tf2 
+9. Copy path of the setup.py
+10. Change the below code 
+    %%bash 
+    cd models/research
+    pip install .
+    
+    -> 
+    %%bash 
+    cd models/research
+    cp object_detection/packages/tf2/setup.py . 
+    pip install .
+
+11. Till here in the above steps installing of libraries in colab are completed
+12.
