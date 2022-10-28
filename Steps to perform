@@ -37,3 +37,9 @@ protoc object_detection/protos/*.proto --python_out=.
 25. Upload those new images in models -> research-> object_detection -> test_images in test_images
 25. Now all before Instance Segmentation
 26. Now till here our model infernecing is done
+27. Now create config files
+28. create a new cell and run cd /content
+29. !wget http://download.tensorflow.org/models/object_detection/tf2/20200711/efficientdet_d1_coco17_tpu-32.tar.gz
+30. !ls
+31. !tar -xvf efficientdet_d3_coco17_tpu-32.tar.gz
+32. The above command will create config files inside saced models
