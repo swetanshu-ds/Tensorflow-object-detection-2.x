@@ -21,4 +21,12 @@ protoc object_detection/protos/*.proto --python_out=.
     pip install .
 
 11. Till here in the above steps installing of libraries in colab are completed
-12.
+12. From here downside -  Inference using Pretrained Model
+13. Now run till instance segmentation and you will see two images doing object_detection
+14. Now go to https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+15. Copy address of EfficientDet D1 640x640
+16. Paste it http://download.tensorflow.org/models/object_detection/tf2/20200711/efficientdet_d1_coco17_tpu-32.tar.gz
+17. Go to Loader Section which contains def load_model(model_name):
+18. in the base url = change the current url 'http://download.tensorflow.org/models/object_detection/' 
+19. to 'http://download.tensorflow.org/models/object_detection/tf2/20200711/'
+20. And  now run it again
